@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "/addCookie" method = "post">
+       <label> Key: <input type="text" name="key"> </label>
+       <label> Value: <input type="text" name="value"> </label>
+       <input type='submit' value = "Add Cookie">
+    </form>
+    <table>
+        <caption>List cookies</caption>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        <% cookies.forEach(cookie => { %>            
+            <tr>
+                <td><%= cookie.key %></td>
+                <td><%= cookie.value %></td>
+            </tr>
+        <% }) %> 
+    </table>
+</body>
+</html>

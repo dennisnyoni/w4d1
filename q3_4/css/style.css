@@ -1,0 +1,14 @@
+table{
+    border:2px solid pink;
+    border-radius: 2px;
+    background-color: rgb(234, 244, 245);
+    color: rgb(19, 5, 5);
+    width:400px;
+}
+th, td{
+    border:1px solid black;
+}
+caption{
+    font-weight: bold;
+    font-size: 14px;
+}
